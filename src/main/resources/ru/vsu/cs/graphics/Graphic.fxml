@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<VBox  spacing="20.0" xmlns:fx="http://javafx.com/fxml" fx:controller="ru.vsu.cs.graphics.QueueController">
+    <TextField editable="false" alignment="TOP_CENTER" fx:id="queue"/>
+    <HBox spacing="20">
+        <Button text="Offer" onAction="#offerAction" prefWidth="60"/>
+        <TextField alignment="TOP_CENTER" fx:id="offerField"/>
+        <Button text="Clean" onAction="#cleanAction" prefWidth="60"/>
+    </HBox>
+    <HBox spacing="20">
+        <Button text="Remove" onAction="#removeAction" prefWidth="60"/>
+        <TextField editable="false" alignment="TOP_CENTER" fx:id="removeField"/>
+    </HBox>
+    <HBox spacing="20">
+        <Button text="Poll" onAction="#pollAction" prefWidth="60"/>
+        <TextField editable="false" alignment="TOP_CENTER" fx:id="pollField"/>
+    </HBox>
+    <HBox spacing="20">
+        <Button text="Element" onAction="#elementAction" prefWidth="60"/>
+        <TextField editable="false" alignment="TOP_CENTER" fx:id="elementField"/>
+    </HBox>
+    <HBox spacing="20">
+        <Button text="Peek" onAction="#peekAction" prefWidth="60"/>
+        <TextField editable="false" alignment="TOP_CENTER" fx:id="peekField"/>
+    </HBox>
+</VBox>
